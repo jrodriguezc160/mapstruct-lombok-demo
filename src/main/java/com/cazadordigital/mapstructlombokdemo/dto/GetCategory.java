@@ -9,11 +9,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class GetProduct {
+public class GetCategory {
 
   private long id;
   private String name;
-  private String creationDate;
-  private GetCategory category;
 
 }
