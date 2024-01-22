@@ -1,8 +1,6 @@
 package com.cazadordigital.mapstructlombokdemo.test;
 
 import java.util.List;
-import java.util.stream.Collectors;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -19,8 +17,7 @@ public class InitDatabase {
   @Autowired
   private ProductRepository productRepository;
 
-  @Autowired
-  private ProductMapper productMapper;
+  private ProductMapper productMapper = ProductMapper.INSTANCE;
 
   @Bean
   public CommandLineRunner testProductMapperCommand() {

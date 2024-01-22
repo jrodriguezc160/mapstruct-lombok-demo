@@ -11,6 +11,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Data
@@ -29,6 +30,8 @@ public class Product {
 
   @Column(name = "creation_date")
   private LocalDateTime creationDate;
+
+  private BigDecimal price;
 
   @ManyToOne
   @JoinColumn(name = "category_id")
