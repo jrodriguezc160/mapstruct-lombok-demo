@@ -21,7 +21,8 @@ public interface CategoryMapper {
 
   @Mappings({
       @Mapping(source = "id", target = "categoryId"),
-      @Mapping(source = "name", target = "categoryName")
+      @Mapping(source = "name", target = "categoryName"),
+      @Mapping(source = "status", target = "status")
   })
   GetCategory toGetCategory(Category category);
 

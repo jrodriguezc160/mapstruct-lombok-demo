@@ -28,9 +28,12 @@ public interface ProductMapper {
   GetProduct toGetDTO(Product product);
 
   @InheritInverseConfiguration
-  @Mappings({
-      @Mapping(target = "creationDate", ignore = true)
-  })
+  /*
+   * @Mappings({
+   * 
+   * @Mapping(target = "creationDate", ignore = true)
+   * })
+   */
   Product toEntity(GetProduct getProduct);
 
   List<GetProduct> toGetProductList(List<Product> productList);

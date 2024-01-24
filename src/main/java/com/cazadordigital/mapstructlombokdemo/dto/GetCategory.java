@@ -13,5 +13,6 @@ public class GetCategory {
 
   private long categoryId;
   private String categoryName;
+  private boolean status;
 
 }
